@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    android:layout_centerInParent="true" >
+
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        tools:context=".MapsActivity" />
+
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="longitude"
+        android:gravity="center"
+        android:layout_below="@id/map"/>
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="latitude"
+        android:gravity="center"
+        android:layout_below="@id/longitude"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="distance"
+        android:gravity="center"
+        android:layout_below="@id/latitude"/>
+
+    <TextView
+        android:id="@+id/podometre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="podometre"
+        android:gravity="center"
+        android:layout_below="@id/distance"/>
+
+</RelativeLayout>
